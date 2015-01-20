@@ -13,7 +13,7 @@ require("awful.autofocus")
 local wibox = require("wibox")
 local beautiful = require("beautiful")
 local naughty = require("naughty")
-local lain = require("lain")
+--local lain = require("lain")
 local common = require("awful.widget.common")
 local crzang = require("crzang")
 -- }}}
@@ -132,7 +132,7 @@ clockicon = wibox.widget.imagebox(beautiful.widget_clock)
 mytextclock = awful.widget.textclock("%a\n%d\n%m\n%H\n%M")
 mytextclock:set_font("Terminus 7")
 -- calendar
-lain.widgets.calendar:attach(mytextclock, { font_size = 8 })
+--lain.widgets.calendar:attach(mytextclock, { font_size = 8 })
 
 -- Keyboard map indicator and changer
 kbdcfg = {}
@@ -396,7 +396,7 @@ globalkeys = awful.util.table.join(-- Take a screenshot
     awful.key({ modkey, }, "z", function() drop(terminal) end),
 
     -- Widgets popups
-    awful.key({ altkey, }, "c", function() lain.widgets.calendar:show(7) end),
+    --awful.key({ altkey, }, "c", function() lain.widgets.calendar:show(7) end),
     awful.key({ altkey, }, "h", function() fswidget.show(7) end),
 
     -- Copy to clipboard
