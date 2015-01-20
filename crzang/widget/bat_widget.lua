@@ -104,7 +104,8 @@ local function new(image)
         end,
         get_value = function()
             bat_now = get_bat()
-            return bat_now.perc
+
+            return 100
         end,
         icon = image,
         get_hint = function()

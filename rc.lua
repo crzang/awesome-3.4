@@ -1,1 +1,1 @@
-/home/crzang/work/awesome-config/rc.powerarrow-darker-vert.lua
+rc.powerarrow-darker-vert.lua

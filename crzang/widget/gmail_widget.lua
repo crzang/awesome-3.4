@@ -27,7 +27,9 @@ end
 
 local function show_hint(show_diff)
 	local hint_box = wibox.widget.textbox()
-	
+	if hint~=nil then
+		hint.visible=false
+	end	
 	hint= wibox({
 			fg = beautiful.fg_normal,
 			bg = beautiful.bg_normal,
